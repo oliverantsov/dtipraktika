@@ -1,0 +1,24 @@
+#formContainer {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 4%;
+}
+
+h3 {
+    font-size: xx-large !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#descriptionText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rowContainer {
+    text-align: center;
+}
