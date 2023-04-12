@@ -9,7 +9,7 @@ import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Homepage() {
-    const now = 25;
+    const now = 99.9;
     return(
         <div id="formContainer">
             {/* <Col id="leftCol">
@@ -19,34 +19,34 @@ function Homepage() {
             <Col className="d-flex align-items-center justify-content-center">
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <h3>Eesmärk</h3>
-                        <p id="descriptionText">Sõnastatud koosloome eesmärk</p>
+                        <h3>Mõju</h3>
+                        <p id="descriptionText">Mis on toote oodatav mõju?</p>
                         <br />
                         <Breadcrumb>
                                 <Breadcrumb.Item href="/personaalandmed">Personaalandmed</Breadcrumb.Item>
-                                <Breadcrumb.Item active>Eesmärk</Breadcrumb.Item>
+                                <Breadcrumb.Item href="/eesmark">Eesmärk</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/uurimiskysimus">Uurimisküsimus</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/uurimismeetod">Uurimismeetod</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/sisend">Sisend</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/tegevused">Tegevused</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/valjundid">Väljundid</Breadcrumb.Item>
-                                <Breadcrumb.Item href="/moju">Mõju</Breadcrumb.Item>
+                                <Breadcrumb.Item active>Mõju</Breadcrumb.Item>
                         </Breadcrumb>
                         <Col id="progressBar">
                             <ProgressBar now={now} />
                             <p id="descriptionText">{now}%</p>
                         </Col>
                         <div id="rowContainer">
-                                <Button variant="outline-danger" id="backBtn" href="/personaalandmed">← Tagasi</Button>{' '}
-                                <Button variant="outline-success" id="forwardBtn">Edasi →</Button>{' '}
+                                <Button variant="outline-danger" id="backBtn" href="/valjundid">← Tagasi</Button>{' '}
+                                <Button variant="outline-success" id="forwardBtn" href="/finish">Lõpeta ankeet →</Button>{' '}
                         </div>
                         <br />
                         
                         <Form.Control as="textarea" rows={10} cols={70} id="textArea" />
                         <br />
-                        <p>Välja töötatud prototüüp, toode, mis…</p>
-                        <p>Uued praktikad, mis…</p>
-                        <p>Toote X uus funktsionaalsus, mis...</p>
+                        <p>Omandatud oskused, strateegiad</p>
+                        <p>Testi tulemused</p>
+                        <p>Muutused uskumustes, mõtteviisis</p>
                     </Form.Group>
                 </Form>
             </Col>

@@ -9,7 +9,7 @@ import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Homepage() {
-    const now = 25;
+    const now = 50;
     return(
         <div id="formContainer">
             {/* <Col id="leftCol">
@@ -19,14 +19,14 @@ function Homepage() {
             <Col className="d-flex align-items-center justify-content-center">
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <h3>Eesmärk</h3>
+                        <h3>Uurimismeetod</h3>
                         <p id="descriptionText">Sõnastatud koosloome eesmärk</p>
                         <br />
                         <Breadcrumb>
                                 <Breadcrumb.Item href="/personaalandmed">Personaalandmed</Breadcrumb.Item>
-                                <Breadcrumb.Item active>Eesmärk</Breadcrumb.Item>
+                                <Breadcrumb.Item href="/eesmark">Eesmärk</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/uurimiskysimus">Uurimisküsimus</Breadcrumb.Item>
-                                <Breadcrumb.Item href="/uurimismeetod">Uurimismeetod</Breadcrumb.Item>
+                                <Breadcrumb.Item active>Uurimismeetod</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/sisend">Sisend</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/tegevused">Tegevused</Breadcrumb.Item>
                                 <Breadcrumb.Item href="/valjundid">Väljundid</Breadcrumb.Item>
@@ -37,8 +37,8 @@ function Homepage() {
                             <p id="descriptionText">{now}%</p>
                         </Col>
                         <div id="rowContainer">
-                                <Button variant="outline-danger" id="backBtn" href="/personaalandmed">← Tagasi</Button>{' '}
-                                <Button variant="outline-success" id="forwardBtn">Edasi →</Button>{' '}
+                                <Button variant="outline-danger" id="backBtn" href="/uurimiskysimus">← Tagasi</Button>{' '}
+                                <Button variant="outline-success" id="forwardBtn" href="/sisend">Edasi →</Button>{' '}
                         </div>
                         <br />
                         

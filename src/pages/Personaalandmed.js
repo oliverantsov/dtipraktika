@@ -9,7 +9,7 @@ import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Homepage() {
-    const now = 25;
+    const now = 12.5;
     return(
         <div id="formContainer">
             {/* <Col id="leftCol">
@@ -39,12 +39,14 @@ function Homepage() {
                                 <Button variant="outline-success" id="forwardBtn" href="/eesmark">Edasi →</Button>{' '}
                         </div>
                         <br />
-                        
-                        <Form.Control as="textarea" rows={10} cols={70} id="textArea" />
+                        <Form.Label>E-maili aadress</Form.Label>
+                        <Form.Control className="w-80" type="email" placeholder="Sisesta e-mail..." />
                         <br />
-                        <p>Välja töötatud prototüüp, toode, mis…</p>
-                        <p>Uued praktikad, mis…</p>
-                        <p>Toote X uus funktsionaalsus, mis...</p>
+                        <Form.Label>Toote nimi</Form.Label>
+                        <Form.Control className="w-80" type="email" placeholder="Sisesta toote nimi..." />
+                        <br />
+                        <Form.Label>Toote lühikirjeldus</Form.Label>
+                        <Form.Control className="w-80" as="textarea" rows={4} cols={20} placeholder="Sisesta toote nimi..." />
                     </Form.Group>
                 </Form>
             </Col>

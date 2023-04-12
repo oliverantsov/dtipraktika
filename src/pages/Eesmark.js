@@ -38,7 +38,7 @@ function Homepage() {
                         </Col>
                         <div id="rowContainer">
                                 <Button variant="outline-danger" id="backBtn" href="/personaalandmed">← Tagasi</Button>{' '}
-                                <Button variant="outline-success" id="forwardBtn">Edasi →</Button>{' '}
+                                <Button variant="outline-success" id="forwardBtn" href="/uurimiskysimus">Edasi →</Button>{' '}
                         </div>
                         <br />
                         
